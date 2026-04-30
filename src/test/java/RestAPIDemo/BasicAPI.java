@@ -1,3 +1,4 @@
+
 package RestAPIDemo;
 
 import io.restassured.RestAssured;
@@ -15,27 +16,28 @@ class BasicAPI {
 	
 	public static void main(String[] args) {
 	
-	// validate if Add Place API is workimg as expected 
-			//Add place-> Update Place with New Address -> Get Place to validate if New address is present in response
+	// validate if Add Place API is working as expected 
+	//Add place-> Update Place with New Address -> Get Place to validate if New address is present in response
 			
 			//given - all input details 
-			//when - Submit the API -resource,http method
+			//when - Submit the API -resource, http method
 			//Then - validate the response
 	        RestAssured.baseURI="https://rahulshettyacademy.com";
 			String response=given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
 			.body(payload.AddPlace()).when().post("maps/api/place/add/json")
 			.then().assertThat().statusCode(200).body("scope", equalTo("APP"))// hamcrest matchers import
-			.header("server", "Apache/2.4.18 (Ubuntu)").extract().response().asString();
+			.header("server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
+			
+			//.extract().response().asString() → Extracts full response as String for further parsing.
 			
 			System.out.println(response);
 			JsonPath js=new JsonPath(response); 
 			//for parsing Json(take string and convert it into json, we are using it to take ids)
 			String placeId=js.getString("place_id");
-			
-			System.out.println(placeId);
+			System.out.println("place--------------------- " + placeId);
 			
 			//Update Place
-			String newAddress = "Summer Walk, Africa";
+			String newAddress = "Pacific ocean";
 			
 			given().log().all().queryParam("key", "qaclick123").header("Content-Type","application/json")
 			.body("{\r\n" + 
@@ -48,7 +50,7 @@ class BasicAPI {
 			
 			//Get Place
 			
-		String getPlaceResponse=	given().log().all().queryParam("key", "qaclick123")
+		     String getPlaceResponse  =	given().log().all().queryParam("key", "qaclick123")
 			.queryParam("place_id",placeId)
 			.when().get("maps/api/place/get/json")
 			.then().assertThat().log().all().statusCode(200).extract().response().asString();
@@ -57,6 +59,9 @@ class BasicAPI {
 		System.out.println(actualAddress);
 		Assert.assertEquals(actualAddress, "Pacific ocean");
 		//Cucumber Junit, Testng
+		
+		
+		
 		
 		
 		

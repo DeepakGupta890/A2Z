@@ -20,7 +20,7 @@ public class AlertHandling {
 		driver.manage().window().maximize();
 		driver.get("https://demoqa.com/alerts");
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,300)");
+		//js.executeScript("window.scrollBy(0,300)");
 		
 		driver.findElement(By.id("alertButton")).click();
 		 alert=driver.switchTo().alert();

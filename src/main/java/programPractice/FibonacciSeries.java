@@ -17,7 +17,7 @@ public class FibonacciSeries {
 		 System.out.println("Fibonacci Series till " +n + " terms:");
 		System.out.print(firstNumber + ",");
 		System.out.print(secondNumber+ ",");
-		for(int i=1;i<=n;i++)
+		for(int i=2;i<n;i++)
 		{
 			nextTerm=firstNumber+secondNumber;
 			System.out.print(nextTerm + "," );

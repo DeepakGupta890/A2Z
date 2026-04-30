@@ -2,6 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department">
 
+<!-- @Test(groups = {...})
+Test Level <groups> filtering
+Class Level <methods> filtering
+Parallel execution (parallel="tests")-->
+
+
+
     <test name="Regression">
         <groups>
             <run>

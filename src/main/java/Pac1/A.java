@@ -1,6 +1,6 @@
 package Pac1;
 
-  class A {
+  public class A {
 
 	  private int data=40;  
 	  private void msg()

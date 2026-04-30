@@ -9,7 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/java/apiFramework_features"
-,plugin ="json:target/jsonReports/cucumber-report.json",glue= {"apiFramework_stepDefinations"})
+,plugin ={"json:target/jsonReports/cucumber-report.json",
+		"html:target/cucumber-report.html",
+}
+, tags="@Regression" ,glue= {"apiFramework_stepDefinations"})
 public class TestRunner {
 
 	

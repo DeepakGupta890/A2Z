@@ -23,6 +23,9 @@ for(int i=0;i<b.length;i++)
 	System.out.println(b[i]);
 }
 System.out.println("..................");
+
+
+//Find vovels in string
 String s= "soil";
 
 char[] ch= s.toCharArray();
@@ -31,7 +34,7 @@ for(char c:ch)
 {
 	if(c=='a'|| c=='e'|| c=='i'||c=='o'||c=='u')
 	{
-		System.out.print(c);
+		System.out.println(c);
 	}
 }
 

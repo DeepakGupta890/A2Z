@@ -11,7 +11,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class DropDownLooping {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 		//System.setProperty("webdriver.chrome.driver", "./Driver\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver =new ChromeDriver();
@@ -20,6 +19,8 @@ public class DropDownLooping {
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		
 		driver.findElement(By.id("divpaxinfo")).click();
+		String tit = driver.getTitle();
+		System.out.println(tit);
 		
 		int i=1;
 		while(i<3)

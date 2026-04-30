@@ -1,0 +1,24 @@
+# Maven
+target/
+
+# Test reports
+test-output/
+
+# Logs
+*.log
+
+# Screenshots
+screenshot/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

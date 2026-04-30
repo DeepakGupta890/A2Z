@@ -32,7 +32,7 @@ public class ActionMouceMovement {
 	
 		
 		//contextClick is used for right click.
-		//Double click is used for double click operation
+		//DoubleClick() is used for double click operation
 		//Actions class is used to handle the mouse and keyboard actions.
 		//Actions class should be imported from the package org.openqa.selenium.interactions
 	    //Actions class contains a constructor which takes an argument of type WebDriver
@@ -65,6 +65,7 @@ public class ActionMouceMovement {
 		
 		Select a=new Select(driver.findElement(By.xpath("//select[@id='ctl00_mainContent_ddl_Adult']")));
 		a.selectByVisibleText("2");*/
+		
 	
 		
 	}

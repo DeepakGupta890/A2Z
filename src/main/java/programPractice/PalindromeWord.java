@@ -23,7 +23,7 @@ public class PalindromeWord {
 		}
 		System.out.println("...........................................................");
 		 String str, rev = "";
-	      Scanner sc = new Scanner(System.in);
+	     Scanner sc = new Scanner(System.in);
 	 
 	      System.out.println("Enter a string:");
 	      str = sc.nextLine();
@@ -38,7 +38,7 @@ public class PalindromeWord {
 	         System.out.println(str+" is a palindrome");
 	      else
 	         System.out.println(str+" is not a palindrome");
-	 
+	  
 	   }
 
 

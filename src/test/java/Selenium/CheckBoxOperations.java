@@ -26,7 +26,7 @@ public class CheckBoxOperations {
 		 * Validate isSelected and click
 		 */
 
-		WebElement checkBoxSelected = driver.findElement(By.cssSelector("label[for='hobbies-checkbox-1']"));
+		WebElement checkBoxSelected = driver.findElement(By.cssSelector(" "));
 		boolean isSelected = checkBoxSelected.isSelected();
 
 		// performing click operation if element is not selected 

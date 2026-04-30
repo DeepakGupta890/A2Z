@@ -40,7 +40,12 @@ public class DynamicJson {
 	//multidimensional array= collection of arrays
 	public Object[][] getData()
 	{
-		return new Object[][] {{"nkjk","688"},{"ljihd","4345"},{"hkjh","090"}};
+		return new Object[][] 
+				{
+			{"nkjk","688"},
+			{"ljihd","4345"},
+			{"hkjh","090"}
+			};
 	}
 
 }

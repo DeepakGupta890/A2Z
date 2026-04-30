@@ -7,9 +7,9 @@ import Pac1.A;
 	  }
 	public static void main(String args[]){  
 		   A obj = new B();  
-		   obj.msg();  
-		   System.out.println(obj.x);
-		   System.out.println(obj.getNoOfWheels());
+		//   obj.msg();  
+		  // System.out.println(obj.x);
+		  // System.out.println(obj.getNoOfWheels());
 		   
 	}
 }

@@ -50,7 +50,7 @@ public class ECommerceAPITest {
 		.param("productSubCategory", "shirts").param("productPrice", "11500")
 		.param("productDescription", "Lenova").param("productFor", "men")
 		//for attachment multipart used
-		.multiPart("productImage",new File("C:\\Users\\hp\\OneDrive\\Pictures\\Saved Pictures//ls-logo.jpg"));
+		.multiPart("productImage",new File("C:\\Users\\Deepak\\Pictures\\Screenshots\\Screenshot (2).png"));
 		
 		String addProductResponse =reqAddProduct.when().post("/api/ecom/product/add-product").
 		then().log().all().extract().response().asString();

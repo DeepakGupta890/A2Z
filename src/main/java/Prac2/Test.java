@@ -9,4 +9,4 @@ package Prac2;
 		 d.draw();  
 		 System.out.println(Interface.cube(3));  
 		 }}  
-}
+

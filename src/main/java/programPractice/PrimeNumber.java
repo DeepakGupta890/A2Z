@@ -16,7 +16,7 @@ public class PrimeNumber {
 		}
 		else
 		{
-			for(int i=2;i<=m;i++)
+			 for(int i=2;i<=m;i++)
 			{
 				if(number%i==0)
 				{

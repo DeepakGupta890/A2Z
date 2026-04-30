@@ -20,7 +20,7 @@ public class ExcelDataAccess {
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		
-        File f= new File("D:\\Selenium\\eclipse-java-2022-12-R-win32-x86_64\\eclipse-java-2022-12-R-win32-x86_64\\eclipse\\projects-workspace\\Selenium\\Excel\\ExcelDemo.xlsx");
+        File f= new File("D:\\Selenium\\Selenium\\eclipse-java-2022-12-R-win32-x86_64\\projects-workspace\\Selenium\\Excel\\ExcelDemo.xlsx");
 	    FileInputStream fis= new FileInputStream(f);
 	 
 	    XSSFWorkbook wb =new XSSFWorkbook(fis);

@@ -4,6 +4,12 @@ import java.util.List;
 
 public class AddPlace {
 	
+	/*POJO = Plain Old Java Object
+
+They represent JSON Structure in Java objects easily.
+
+Helps in easy mapping between Java objects and JSON body during serialization/deserialization.*/
+	
 	private int accuracy;
 	private String name;
 	private String phone_number;
@@ -12,6 +18,7 @@ public class AddPlace {
 	private String language;
 	private Location location;
 	private List<String> types;
+	
 	public int getAccuracy() {
 		return accuracy;
 	}

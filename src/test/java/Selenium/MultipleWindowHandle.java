@@ -33,6 +33,7 @@ public class MultipleWindowHandle {
 		driver.switchTo().window(newTab);
 		driver.get("https://courses.rahulshettyacademy.com/courses/");
 		String CourceName=driver.findElements(By.cssSelector("div[class='course-listing-title']")).get(2).getText();
+		//String courceName=driver.findElements(By.xpath("//div//h2[class='tracking-tight ProductTitle text-xl font-semibold line-clamp-2']")).get(2).getText()
 		driver.switchTo().defaultContent();
 		driver.findElement(By.xpath("//div[@class='form-group']//input[@name='name']")).sendKeys(CourceName);
 		

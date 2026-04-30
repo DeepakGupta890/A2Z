@@ -36,6 +36,8 @@ public class MaxMinInArray {
 		System.out.println("...........");
 		//convert array to collection list
 				//List values= Arrays.asList(arr);
+				
+				
 		
 		//OR
 		

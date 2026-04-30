@@ -24,7 +24,7 @@ public class TestDataBuild {
 		List<String> myList =new ArrayList<String>();
 		myList.add("shoe park");
 		myList.add("shop");
-
+       
 		p.setTypes(myList);
 		Location l =new Location();
 		l.setLat(-38.383494);

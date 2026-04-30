@@ -19,7 +19,7 @@
 
 Feature: Validating Place API's
 @AddPlace  @Regresstion
-Scenario Outline: Verify if Place is being Succesfully added using AddPlaceAPI
+Scenario Outline:  
 	Given Add Place Payload with "<name>"  "<language>" "<address>"
 	When user calls "AddPlaceAPI" with "POST" http request
 	Then the API call got success with status code 200

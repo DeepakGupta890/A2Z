@@ -13,6 +13,7 @@ public class NotificatioCrome {
 		ChromeOptions o=new ChromeOptions();
 		
 		o.addArguments("--disable-notifications");
+		//“Don’t show any browser notifications/popups”
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver(o);
 		driver.get("https://www.wisdomjobs.com/e-university/test-cases-interview-questions.html");

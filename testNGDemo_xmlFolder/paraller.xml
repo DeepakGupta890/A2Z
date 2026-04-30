@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Loan Department" parallel="tests" thread-count="6">
+
+<!--parallel="tests"
+→ It means TestNG will run different <test> blocks (from testng.xml) in parallel (i.e., at the same time).
+
+thread-count="2"
+→ It defines how many threads (separate executions) can run at the same time.-->
+
+
+
     <listeners> 
         <listener class-name="testNGDemo.Listeners"/>
           </listeners>

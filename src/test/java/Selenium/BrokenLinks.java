@@ -34,7 +34,7 @@ public class BrokenLinks {
 		driver.findElement(By.xpath("//a//span[text()='Log In']")).click();
 		
 		driver.findElement(By.name("email")).sendKeys("deepakmodanwal93@gmail.com");
-		driver.findElement(By.name("password")).sendKeys("Admin@123");
+		driver.findElement(By.name("password")).sendKeys("Admin @123");
 		driver.findElement(By.xpath("//div[@class='ui fluid large blue submit button']")).click();
 		//driver.findElement(By.xpath("//div//a//span[text()='Calendar']")).click();
 		
