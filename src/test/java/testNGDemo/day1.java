@@ -34,6 +34,12 @@ public class day1 {
 	{
 		System.out.println("bye");
 	}
+	
+	@Test
+	public void pullTest()
+	{
+		System.out.println("Check changes added");
+	}
 
 
 
