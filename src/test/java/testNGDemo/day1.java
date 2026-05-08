@@ -38,7 +38,9 @@ public class day1 {
 	@Test
 	public void pullTest()
 	{
-		System.out.println("Check changes added");
+		//System.out.println("Check changes added");
+		System.out.println("review changes added");
+		
 	}
 
 
