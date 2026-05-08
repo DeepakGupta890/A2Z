@@ -1,6 +1,6 @@
 package programPractice;
 
-public class CountOccuranceforOneCHar {
+public class CountOccuranceforOneChar {
 	
 	public static int count(String s, char c)
 	{

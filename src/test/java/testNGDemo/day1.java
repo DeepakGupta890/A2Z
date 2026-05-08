@@ -42,6 +42,14 @@ public class day1 {
 		System.out.println("review changes added");
 		
 	}
+	
+	@Test
+	public void stashTest()
+	{
+		
+		System.out.println("check stash test");
+		
+	}
 
 
 

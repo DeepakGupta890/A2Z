@@ -32,3 +32,29 @@ public class CountEvenOddNumber {
 		System.out.println("Count of odd numbers: " +odd_count );
 
 }}
+
+
+/*import java.util.Arrays;
+
+class Main {
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        int k = 2;
+
+        for (int t = 0; t < k; t++) {
+            rotateOne(arr);
+        }
+
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void rotateOne(int[] arr) {
+        int last = arr[arr.length - 1];
+
+        for (int i = arr.length - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
+        }
+
+        arr[0] = last;
+    }
+}*/

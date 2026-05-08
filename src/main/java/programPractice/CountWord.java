@@ -41,3 +41,27 @@ So you write \\W+ to actually pass \W+ to regex
     }
     
 }
+
+
+
+
+/*
+import java.util.*;
+import java.util.stream.*;
+
+class Main {
+    public static void main(String[] args) {
+
+        String text = "Test the live test live country.";
+
+        Map<String, Long> wordCount = Arrays.stream(text.toLowerCase().split("\\W+"))
+                .collect(Collectors.groupingBy(
+                        word -> word,
+                        LinkedHashMap::new,
+                        Collectors.counting()
+                ));
+
+        System.out.println(wordCount);
+    }
+}
+*/

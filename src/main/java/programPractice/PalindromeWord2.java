@@ -2,7 +2,7 @@ package programPractice;
 
 import java.util.Scanner;
 
-public class PalindromeWord {
+public class PalindromeWord2 {
 
 	public static void main(String[] args) {
 		

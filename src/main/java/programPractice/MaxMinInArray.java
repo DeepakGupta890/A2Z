@@ -11,8 +11,8 @@ public class MaxMinInArray {
 		// TODO Auto-generated method stub
 		
 		int[] arr= {1,423,6,46,34,23,13,53,4};
-		int  max=arr[0];
-		int min=arr[0];
+		int  max=Integer.MIN_VALUE;
+		int min=Integer.MAX_VALUE;
 		for(int i=0;i<arr.length;i++)
 		{
 			if(arr[i]>max)

@@ -12,7 +12,7 @@ public class MaxMinDay {
         data.put("Wed", 115);
         data.put("Thurs", 176);
         data.put("Fri", 142);
-        data.put("Sat", 113);
+        data.put("Sat", 113); 
         data.put("Sun", -105);
 
         String maxDay = "";

@@ -1,11 +1,15 @@
 package programPractice;
 
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.testng.annotations.Test;
+
 public class CountOccuranceOfWords {
 	
-	public static void main(String[] args)
+	@Test
+	public void countWordOccurance()
 	{
 		   String sent = "Test the live test live country.";
 
@@ -28,6 +32,28 @@ public class CountOccuranceOfWords {
 	        for (Map.Entry<String, Integer> entry : map.entrySet()) {
 	            System.out.println(entry.getKey() + " : " + entry.getValue());
 	        }
+	        
+	      
 	}
+	
+	  
+    @Test
+    public void countOccuranceNumber()
+    {
+    	   int[] arr = {3, 5, 6, 4, 3, 5};
+
+           Map<Integer, Integer> map = new HashMap<>();
+
+           for(int num : arr) {
+               map.put(num, map.getOrDefault(num, 0) + 1);
+           }
+
+           for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
+               if(entry.getValue() > 1) {
+                   System.out.println(entry.getKey());
+               }
+           }
+    }
+	
 
 }

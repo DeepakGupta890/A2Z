@@ -21,8 +21,8 @@ public class FindNameChar {
 			
 		} */
 		
-		 String name = "Mr. Deepak Kumar Gupta";
-	        String[] arr = name.split(" ");
+		 String name = "Mr. Deepak Kumar Gupta.";
+	        String[] arr = name.split("\\W+");
 	        String lastWord = arr[arr.length - 1]; // Get the last word
 	        if (lastWord.length() >= 3) {
 	            char result = lastWord.charAt(lastWord.length() - 3);

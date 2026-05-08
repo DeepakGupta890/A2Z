@@ -40,6 +40,17 @@ public class CountOccuranceOfAllChar {
         for (int i = 0; i < str.length(); i++) {
             count[str.charAt(i)]++;
         }
+            /*
+             
+str.charAt(i) returns a character
+Internally, Java converts it to its ASCII (Unicode) value due to this use 256 instead of str.length() =8
+
+Example:
+
+'a' → 97
+'t' → 116
+             */
+       
 
         // Print only once
         for (int i = 0; i < str.length(); i++) {

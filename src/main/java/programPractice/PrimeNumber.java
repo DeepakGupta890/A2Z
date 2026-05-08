@@ -6,30 +6,32 @@ public class PrimeNumber {
 	public static void main(String[] args) {
 		
 		
-		int m=0;
-		int number=15;
-		int flag=0;
-		m=number/2;
-		if(number==0||number==1)
+
+		int number=17;
+		
+	 boolean isPrime = true;
+	
+		if(number<=1)
 		{
-			System.out.println(number + " is not prime number");
+			 isPrime = false;
 		}
 		else
 		{
-			 for(int i=2;i<=m;i++)
+			 for(int i=2;i<=Math.sqrt(number);i++)
 			{
 				if(number%i==0)
 				{
-					System.out.println(number + " is not prime");
-					flag=1;
+					isPrime = false;
 					break;
 				}
 				
 			}
-			if(flag==0)
-			{
-				System.out.println(number + " is prime");
-			}
+			 System.out.println(isPrime ? "Prime Number" : "Not Prime Number"); //ternary operator
+			 /*if (isPrime) {
+    System.out.println("Prime Number");
+} else {
+    System.out.println("Not Prime Number");
+}*/
 		}
 		
 
