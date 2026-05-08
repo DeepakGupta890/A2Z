@@ -52,10 +52,10 @@ public class day1 {
 	}
 
 	@Test
-	public void stashTest1()
+	public void stashTest2()
 	{
 		
-		System.out.println("check stash test1");
+		System.out.println("check stash test2");
 		
 	}
 
