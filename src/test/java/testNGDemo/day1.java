@@ -51,6 +51,14 @@ public class day1 {
 		
 	}
 
+	@Test
+	public void stashTest1()
+	{
+		
+		System.out.println("check stash test1");
+		
+	}
+
 
 
 }
