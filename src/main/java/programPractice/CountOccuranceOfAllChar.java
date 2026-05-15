@@ -1,36 +1,32 @@
 package  programPractice;
 
+import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.Set;
+
+import org.testng.annotations.Test;
 
 public class CountOccuranceOfAllChar {
 	
-	public static void main(String[] args) {
-//
-//	String str= "testighs";
-//	int[] count = new int[256];
-//	//int len = str.length();
-//	for(int i=0;i<str.length();i++) 
-//	{
-//		//System.out.println("i value : " +str.charAt(i));
-//		count[str.charAt(i)]++;
-//		char [] ch= new char[str.length()];
-//		ch[i]=str.charAt(i);
-//		int find=0;
-//		for(int j=0;j<=i;j++)
-//		{ 
-//		
-//			if(ch[i]==ch[j])
-//			
-//				find++;
-//						
-//		}
-//		if (find==1)
-//		{
-//			System.out.println("The occurance of " + str.charAt(i) +" is :" + count[str.charAt(i)]);
-//		}
-//	}
+	/*
+	 * Convert	               Syntax
+ Array → List	            Arrays.asList(arr)
+ List → Array	            list.toArray(new Type[0])
+ Array → Set	            new HashSet<>(Arrays.asList(arr))
+ Set → List	                new ArrayList<>(set)
+ List → Set	                new HashSet<>(list)
+ Set → Array	            set.toArray(new Type[0])
+ Map Keys → List	        new ArrayList<>(map.keySet())
+ Map Values → List	        new ArrayList<>(map.values())
+	 */
+
+
 		
+		@Test
 		
+		public void occuranceOfChar()
+		{
+			
 		
 		String str = "testighs";
 
@@ -62,6 +58,49 @@ Example:
             }
         }
 	}
+		
+		
+		@Test
+	public void removeDuplicateChar1()
+	{
+			 String input= "automation";
+	         
+	         char [] ch= input.toCharArray();
+	         int [] count= new int[256];
+	        
+	         StringBuilder result = new StringBuilder();
+	         
+	         for(char c: ch)
+	         {
+	             if(count[c]==0)
+	             {
+	                result.append(String.valueOf(c));
+	                 count[c]++;
+	             }
+	         }
+	         System.out.println(result);
+	}
+		
+		@Test
+		public void removeDuplicateChar2()
+		{
+			String input= "automation";
+	         
+	         char [] ch= input.toCharArray();
+	         int [] count= new int[256];
+	        
+	         StringBuilder result = new StringBuilder();
+	         
+	         Set <Character> set= new LinkedHashSet<>();
+	         for(char c: ch)
+	         {
+	             if(set.add(c)) {
+	                result.append(c);
+	            }
+	         }
+	         
+	         System.out.println(result);
+		}
 	
 
 }

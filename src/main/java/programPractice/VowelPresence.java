@@ -13,9 +13,11 @@ public class VowelPresence {
 			{
 				System.out.println("Vowel is present");
 				count++;
-				break;
+				//break;
+				continue;
 				
-				
+				//It exits the entire loop completely
+				//If you only want to skip one iteration and continue the loop, use continue instead.
 			}
 			else 
 			{
